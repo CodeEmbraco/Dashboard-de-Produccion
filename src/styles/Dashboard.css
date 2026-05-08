@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: #f4f7f9;
+}
+
+.dashboard-container {
+  padding: 20px 40px;
+  width: 100%;
+  position: relative; 
+}
+
+/* HEADER CON CENTRADO ABSOLUTO */
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 35px;
+  padding: 15px 0;
+  border-bottom: 2px solid #e2e8f0;
+  position: relative;
+  height: 110px;
+}
+
+.header-logo {
+  height: 85px; 
+}
+
+.header-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.dashboard-title {
+  font-size: 2.1rem;
+  font-weight: 800;
+  color: #111827;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.header-right-space {
+  width: 300px; 
+}
+
+.header-logo-right {
+  position: absolute;
+  top: 5px;
+  right: 25px;
+  height: 165px; 
+  z-index: 10;
+  filter: drop-shadow(0 8px 12px rgba(0,0,0,0.15));
+}
+
+/* GRID Y DISEÑO DE TARJETAS */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  display: flex;
+  flex-direction: column;
+  min-height: 280px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.theme-green { border-top: 7px solid #10b981; }
+.theme-yellow { border-top: 7px solid #FFF41F; }
+
+.card-header {
+  padding: 12px;
+  background-color: #f8fafc;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: #475569;
+  font-size: 0.9rem;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.stats-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* VALORES KPI */
+.total-value {
+  font-size: 3.8rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.theme-green .total-value { color: #059669; }
+.theme-yellow .total-value { color: #D2C800; }
+
+/* IMÁGENES 3D */
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.unit-image { 
+  max-width: 140px; 
+  height: auto; 
+}
+
+/* Clase para Insikerators, Electronics y Fan */
+.large-unit-image { 
+  max-width: 175px; 
+  height: auto; 
+  filter: drop-shadow(0 12px 20px rgba(0,0,0,0.2)); /* Sombra para dar profundidad 3D */
+  transition: transform 0.3s ease;
+}
+
+.large-unit-image:hover {
+  transform: scale(1.05);
+}
+
+/* TURNOS / BARRAS LATERALES */
+.mini-bars {
+  width: 135px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.bar-row {
+  display: flex;
+  align-items: center;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #334155;
+}
+
+.bar {
+  height: 10px;
+  background: #f1f5f9;
+  border-radius: 4px;
+  flex-grow: 1;
+  margin: 0 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.theme-green .bar::after { content: ''; display: block; height: 100%; width: 75%; background: #10b981; }
+.theme-yellow .bar::after { content: ''; display: block; height: 100%; width: 60%; background: #D2C800; }
+
+/* BARRA DE PROGRESO INFERIOR, se basa en meta contra el real */
+.card-footer {
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.progress-bar-container {
+  height: 10px;
+  background: #f1f5f9;
+  border-radius: 10px;
+  flex-grow: 1;
+}
+
+.progress-bar-fill { height: 100%; border-radius: 10px; }
+.theme-green .progress-bar-fill { background-color: #10b981; width: 85%; }
+.theme-yellow .progress-bar-fill { background-color: #D2C800; width: 45%; }
+
+/* =========================================
+   FOOTER - DERECHOS RESERVADOS
+   ========================================= */
+.dashboard-footer-main {
+  background-color: #1a1a1a; /* Fondo casi negro */
+  color: #ffffff;            /* Texto blanco */
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;          /* Espacio entre las tarjetas y el footer */
+  width: calc(100% + 80px);  /* Para que cubra todo el ancho a pesar del padding del container */
+  margin-left: -40px;        /* Compensa el padding del contenedor padre */
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+.dashboard-footer-main p {
+  margin: 0;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+/* El segundo párrafo (TI) un poco más sutil */
+.dashboard-footer-main p:last-child {
+  opacity: 0.8;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
