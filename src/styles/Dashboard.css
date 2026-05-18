@@ -17,7 +17,9 @@ body {
   position: relative; 
 }
 
-/* HEADER CON CENTRADO ABSOLUTO */
+/* =========================================
+   HEADER CON CENTRADO ABSOLUTO PERFECTO
+   ========================================= */
 .dashboard-header {
   display: flex;
   justify-content: space-between;
@@ -61,7 +63,9 @@ body {
   filter: drop-shadow(0 8px 12px rgba(0,0,0,0.15));
 }
 
-/* GRID Y DISEÑO DE TARJETAS */
+/* =========================================
+   GRID Y CARD LAYOUT
+   ========================================= */
 .dashboard-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -101,17 +105,42 @@ body {
   align-items: center;
 }
 
-/* VALORES KPI */
+/* =========================================
+   ESTILOS DE VALORES KPI
+   ========================================= */
 .total-value {
   font-size: 3.8rem;
   font-weight: 800;
   line-height: 1;
+  display: inline-flex;
+  align-items: baseline;
 }
 
 .theme-green .total-value { color: #059669; }
 .theme-yellow .total-value { color: #D2C800; }
 
-/* IMÁGENES 3D */
+.total-value small, .rate-divider {
+  font-size: 1.5rem !important;
+  color: #94a3b8 !important;
+  font-weight: 500 !important;
+  margin-left: 8px;
+}
+
+.rate-label {
+  font-size: 0.8rem;
+  color: #64748b;
+  margin-top: 4px;
+}
+
+.delta {
+  font-size: 0.9rem;
+  color: #334155;
+  margin-top: 2px;
+}
+
+/* =========================================
+   CONTENEDORES E IMÁGENES ESTÁNDAR (IGUAL A CDU)
+   ========================================= */
 .image-container {
   flex: 1;
   display: flex;
@@ -119,24 +148,22 @@ body {
   align-items: center;
 }
 
+/* Todas las imágenes heredan exactamente el tamaño base de la CDU */
 .unit-image { 
   max-width: 140px; 
   height: auto; 
+  object-fit: contain;
+  filter: drop-shadow(0 8px 12px rgba(0,0,0,0.12));
 }
 
-/* Clase para Insikerators, Electronics y Fan */
-.large-unit-image { 
-  max-width: 175px; 
-  height: auto; 
-  filter: drop-shadow(0 12px 20px rgba(0,0,0,0.2)); /* Sombra para dar profundidad 3D */
-  transition: transform 0.3s ease;
+.placeholder-img {
+  font-size: 2.5rem;
+  opacity: 0.2;
 }
 
-.large-unit-image:hover {
-  transform: scale(1.05);
-}
-
-/* TURNOS / BARRAS LATERALES */
+/* =========================================
+   SECCIÓN SEGUIMIENTO DE TURNOS (BARRAS)
+   ========================================= */
 .mini-bars {
   width: 135px;
   display: flex;
@@ -165,7 +192,9 @@ body {
 .theme-green .bar::after { content: ''; display: block; height: 100%; width: 75%; background: #10b981; }
 .theme-yellow .bar::after { content: ''; display: block; height: 100%; width: 60%; background: #D2C800; }
 
-/* BARRA DE PROGRESO INFERIOR, se basa en meta contra el real */
+/* =========================================
+   BARRA DE PROGRESO INFERIOR (FOOTER CARD)
+   ========================================= */
 .card-footer {
   margin-top: 25px;
   display: flex;
@@ -185,16 +214,16 @@ body {
 .theme-yellow .progress-bar-fill { background-color: #D2C800; width: 45%; }
 
 /* =========================================
-   FOOTER - DERECHOS RESERVADOS
+   FOOTER PRINCIPAL - DERECHOS RESERVADOS
    ========================================= */
 .dashboard-footer-main {
-  background-color: #1a1a1a; /* Fondo casi negro */
-  color: #ffffff;            /* Texto blanco */
+  background-color: #1a1a1a;
+  color: #ffffff;
   text-align: center;
   padding: 20px 0;
-  margin-top: 40px;          /* Espacio entre las tarjetas y el footer */
-  width: calc(100% + 80px);  /* Para que cubra todo el ancho a pesar del padding del container */
-  margin-left: -40px;        /* Compensa el padding del contenedor padre */
+  margin-top: 40px;
+  width: calc(100% + 80px);
+  margin-left: -40px;      
   font-size: 0.85rem;
   line-height: 1.6;
 }
@@ -205,7 +234,6 @@ body {
   letter-spacing: 0.5px;
 }
 
-/* El segundo párrafo (TI) un poco más sutil */
 .dashboard-footer-main p:last-child {
   opacity: 0.8;
   font-weight: 600;
