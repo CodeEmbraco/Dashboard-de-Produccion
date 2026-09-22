@@ -1,63 +1,54 @@
 import React from 'react';
 import '../styles/Dashboard.css';
 
-const KpiCard = ({ title, total, rate, delta, values, image }) => {
-  const isPositive = delta >= 0;
-  const themeClass = isPositive ? 'theme-green' : 'theme-yellow';
-
+const KpiCard = ({ title, total, meta, delta, values, image, colorClass }) => {
   return (
-    <div className={`card ${themeClass}`}>
-      <div className="card-header">
-        {title} 
+    <div className="kpi-mini-card" style={{ borderBottomColor: colorClass === 'status-green' ? '#008040' : colorClass === 'status-yellow' ? '#f59e0b' : '#dc2626' }}>
+      <div className="kpi-mini-header">{title}</div>
+      
+      <div className="kpi-mini-body">
+        {/* Imagen del Producto */}
+        <div className="mini-img-container">
+          <img src={image} alt={title} className="kpi-mini-img" />
+        </div>
+
+        {/* Métricas Principales */}
+        <div className="kpi-mini-vals">
+          <div className={`main-val ${colorClass}`}>
+            {total} <span className="meta-val">/ {meta}</span>
+          </div>
+          <div className="rate-lbl">Actual Rate (RPM)</div>
+        </div>
+
+        {/* Barras por Turnos */}
+        <div className="kpi-mini-bars">
+          <div className="mini-bar-row">
+            <span className="bar-lbl">T3:</span>
+            <div className="mini-bar-track">
+              <div className="mini-bar-fill fill-status-green" style={{ width: `${meta ? Math.min((values.t3 / (meta / 3)) * 100, 100) : 0}%` }}></div>
+            </div>
+            <span className="bar-val">{values.t3}</span>
+          </div>
+          <div className="mini-bar-row">
+            <span className="bar-lbl">T1:</span>
+            <div className="mini-bar-track">
+              <div className="mini-bar-fill fill-status-green" style={{ width: `${meta ? Math.min((values.tt / (meta / 3)) * 100, 100) : 0}%` }}></div>
+            </div>
+            <span className="bar-val">{values.tt}</span>
+          </div>
+          <div className="mini-bar-row">
+            <span className="bar-lbl">T2:</span>
+            <div className="mini-bar-track">
+              <div className="mini-bar-fill fill-status-green" style={{ width: `${meta ? Math.min((values.t2 / (meta / 3)) * 100, 100) : 0}%` }}></div>
+            </div>
+            <span className="bar-val">{values.t2}</span>
+          </div>
+        </div>
       </div>
-      <div className="card-body">
-        <div className="stats-main">
-          {/* LADO IZQUIERDO: Totales y Metricas */}
-          <div className="total-group">
-            <p className="label-group">TOTAL DÍA</p>
-            <h1 className="total-value">
-              {total} <small className="rate-divider">/ {rate}</small>
-            </h1>
-            <p className="rate-label">Rate Actual (RPM)</p>
-            <p className="delta">Delta: <strong>{isPositive ? `+${delta}` : delta}</strong></p>
-          </div>
 
-          {/* CENTRO: Imagen unificada al tamaño estándar */}
-          <div className="image-container">
-            {image ? (
-              <img src={image} alt={title} className="unit-image" />
-            ) : (
-              <div className="placeholder-img">⚙️</div>
-            )}
-          </div>
-
-          {/* LADO DERECHO: Barras indicadoras de turnos */}
-          <div className="mini-bars">
-            <div className="bar-row">
-              <span>T3:</span> 
-              <span className="bar"></span> 
-              <span>{values.t3}</span>
-            </div>
-            <div className="bar-row">
-              <span>TT:</span> 
-              <span className="bar"></span> 
-              <span>{values.tt}</span>
-            </div>
-            <div className="bar-row">
-              <span>T2:</span> 
-              <span className="bar"></span> 
-              <span>{values.t2}</span>
-            </div>
-          </div>
-        </div>
-
-        {/* FOOTER DE LA CARD: Barra de cumplimiento */}
-        <div className="card-footer">
-          <div className="progress-bar-container">
-            <div className="progress-bar-fill"></div>
-          </div>
-          <span className="status-icon">{isPositive ? '⬆️' : '⬇️'}</span>
-        </div>
+      {/* Pie con Delta */}
+      <div className="kpi-mini-footer">
+        Delta: {delta > 0 ? `+${delta}` : delta}
       </div>
     </div>
   );
