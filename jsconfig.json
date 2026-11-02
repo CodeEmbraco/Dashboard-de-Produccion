@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "paths": {
+            "@assets/*": ["./assets/*"],
+            "@components/*": ["./components/*"],
+            "@pages/*": ["./pages/*"],
+            "@utils/*": ["./src/utils/*"],
+            "@context/*": ["./src/context/*"],
+            "@hooks/*": ["./src/hooks/*"],
+            "@config/*": ["./src/config/*"],
+            "@styles/*": ["./src/styles/*"],
+            "@services/*": ["./src/services/*"],
+        }
+    },
+    "exclude": ["node_modules", "dist"]
+}

@@ -1,0 +1,314 @@
+[
+    {
+        "LineId": "cdu",
+        "Nombre": "CDU",
+        "totalDia": {
+            "produccion": 0,
+            "metaTotal": 618,
+            "metaAcumulada": 187,
+            "eficiencia": 0
+        },
+        "turnos": {
+            "T1": {
+                "produccion": 0,
+                "meta": 255,
+                "eficiencia": 0
+            },
+            "T2": {
+                "produccion": 0,
+                "meta": 289,
+                "eficiencia": 0
+            },
+            "T3": {
+                "produccion": 0,
+                "meta": 74,
+                "eficiencia": 0
+            }
+        },
+        "produccion": {
+            "totalDia": {
+                "produccion": 0,
+                "metaTotal": 618,
+                "metaAcumulada": 187,
+                "eficiencia": 0
+            },
+            "turnos": {
+                "T1": {
+                    "produccion": 0,
+                    "meta": 255,
+                    "eficiencia": 0
+                },
+                "T2": {
+                    "produccion": 0,
+                    "meta": 289,
+                    "eficiencia": 0
+                },
+                "T3": {
+                    "produccion": 0,
+                    "meta": 74,
+                    "eficiencia": 0
+                }
+            }
+        }
+    },
+    {
+        "LineId": "ecmfan",
+        "Nombre": "ECM FAN",
+        "totalDia": {
+            "produccion": 235,
+            "metaTotal": 1560,
+            "metaAcumulada": 440,
+            "eficiencia": 15.06
+        },
+        "turnos": {
+            "T1": {
+                "produccion": 235,
+                "meta": 600,
+                "eficiencia": 39.17
+            },
+            "T2": {
+                "produccion": 0,
+                "meta": 540,
+                "eficiencia": 0
+            },
+            "T3": {
+                "produccion": 0,
+                "meta": 420,
+                "eficiencia": 0
+            }
+        },
+        "produccion": {
+            "totalDia": {
+                "produccion": 235,
+                "metaTotal": 1560,
+                "metaAcumulada": 440,
+                "eficiencia": 15.06
+            },
+            "turnos": {
+                "T1": {
+                    "produccion": 235,
+                    "meta": 600,
+                    "eficiencia": 39.17
+                },
+                "T2": {
+                    "produccion": 0,
+                    "meta": 540,
+                    "eficiencia": 0
+                },
+                "T3": {
+                    "produccion": 0,
+                    "meta": 420,
+                    "eficiencia": 0
+                }
+            }
+        }
+    },
+    {
+        "LineId": "electronics",
+        "Nombre": "ELECTRONICS",
+        "totalDia": {
+            "produccion": 838,
+            "metaTotal": 3930,
+            "metaAcumulada": 970,
+            "eficiencia": 21.32
+        },
+        "turnos": {
+            "T1": {
+                "produccion": 838,
+                "meta": 1310,
+                "eficiencia": 63.97
+            },
+            "T2": {
+                "produccion": 0,
+                "meta": 1490,
+                "eficiencia": 0
+            },
+            "T3": {
+                "produccion": 0,
+                "meta": 1130,
+                "eficiencia": 0
+            }
+        },
+        "produccion": {
+            "totalDia": {
+                "produccion": 838,
+                "metaTotal": 3930,
+                "metaAcumulada": 970,
+                "eficiencia": 21.32
+            },
+            "turnos": {
+                "T1": {
+                    "produccion": 838,
+                    "meta": 1310,
+                    "eficiencia": 63.97
+                },
+                "T2": {
+                    "produccion": 0,
+                    "meta": 1490,
+                    "eficiencia": 0
+                },
+                "T3": {
+                    "produccion": 0,
+                    "meta": 1130,
+                    "eficiencia": 0
+                }
+            }
+        }
+    },
+    {
+        "LineId": "insinkerator1",
+        "Nombre": "INSINKERATOR ST L-1",
+        "totalDia": {
+            "produccion": 801,
+            "metaTotal": 3710,
+            "metaAcumulada": 935,
+            "eficiencia": 21.59
+        },
+        "turnos": {
+            "T1": {
+                "produccion": 801,
+                "meta": 1275,
+                "eficiencia": 62.82
+            },
+            "T2": {
+                "produccion": 0,
+                "meta": 1360,
+                "eficiencia": 0
+            },
+            "T3": {
+                "produccion": 0,
+                "meta": 1075,
+                "eficiencia": 0
+            }
+        },
+        "produccion": {
+            "totalDia": {
+                "produccion": 801,
+                "metaTotal": 3710,
+                "metaAcumulada": 935,
+                "eficiencia": 21.59
+            },
+            "turnos": {
+                "T1": {
+                    "produccion": 801,
+                    "meta": 1275,
+                    "eficiencia": 62.82
+                },
+                "T2": {
+                    "produccion": 0,
+                    "meta": 1360,
+                    "eficiencia": 0
+                },
+                "T3": {
+                    "produccion": 0,
+                    "meta": 1075,
+                    "eficiencia": 0
+                }
+            }
+        }
+    },
+    {
+        "LineId": "preensamble",
+        "Nombre": "PRE-ENSAMBLE ES",
+        "totalDia": {
+            "produccion": 764,
+            "metaTotal": 7095,
+            "metaAcumulada": 1115,
+            "eficiencia": 10.77
+        },
+        "turnos": {
+            "T1": {
+                "produccion": 764,
+                "meta": 1495,
+                "eficiencia": 51.1
+            },
+            "T2": {
+                "produccion": 0,
+                "meta": 3150,
+                "eficiencia": 0
+            },
+            "T3": {
+                "produccion": 0,
+                "meta": 2450,
+                "eficiencia": 0
+            }
+        },
+        "produccion": {
+            "totalDia": {
+                "produccion": 764,
+                "metaTotal": 7095,
+                "metaAcumulada": 1115,
+                "eficiencia": 10.77
+            },
+            "turnos": {
+                "T1": {
+                    "produccion": 764,
+                    "meta": 1495,
+                    "eficiencia": 51.1
+                },
+                "T2": {
+                    "produccion": 0,
+                    "meta": 3150,
+                    "eficiencia": 0
+                },
+                "T3": {
+                    "produccion": 0,
+                    "meta": 2450,
+                    "eficiencia": 0
+                }
+            }
+        }
+    },
+    {
+        "LineId": "thermo",
+        "Nombre": "CDU TFS",
+        "totalDia": {
+            "produccion": 21,
+            "metaTotal": 108,
+            "metaAcumulada": 33,
+            "eficiencia": 19.44
+        },
+        "turnos": {
+            "T1": {
+                "produccion": 21,
+                "meta": 45,
+                "eficiencia": 46.67
+            },
+            "T2": {
+                "produccion": 0,
+                "meta": 42,
+                "eficiencia": 0
+            },
+            "T3": {
+                "produccion": 0,
+                "meta": 21,
+                "eficiencia": 0
+            }
+        },
+        "produccion": {
+            "totalDia": {
+                "produccion": 21,
+                "metaTotal": 108,
+                "metaAcumulada": 33,
+                "eficiencia": 19.44
+            },
+            "turnos": {
+                "T1": {
+                    "produccion": 21,
+                    "meta": 45,
+                    "eficiencia": 46.67
+                },
+                "T2": {
+                    "produccion": 0,
+                    "meta": 42,
+                    "eficiencia": 0
+                },
+                "T3": {
+                    "produccion": 0,
+                    "meta": 21,
+                    "eficiencia": 0
+                }
+            }
+        }
+    }
+]
