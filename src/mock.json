@@ -1,5 +1,45 @@
 [
     {
+        "LineId": "linea14",
+        "Nombre": "LINEA 14",
+        "produccion": {
+            "totalDia": {
+                "produccion": 219,
+                "meta": 5760,
+                "metaEfectiva": 240,
+                "perdidaJustificada": 0,
+                "perdidaNoJustificada": 8,
+                "eficiencia": 91.25
+            },
+            "turnos": {
+                "D": {
+                    "produccion": 219,
+                    "meta": 2040,
+                    "metaEfectiva": 240,
+                    "perdidaJustificada": 0,
+                    "perdidaNoJustificada": 8,
+                    "eficiencia": 10.74
+                },
+                "E": {
+                    "produccion": 0,
+                    "meta": 1920,
+                    "metaEfectiva": 0,
+                    "perdidaJustificada": 0,
+                    "perdidaNoJustificada": 0,
+                    "eficiencia": 0
+                },
+                "F": {
+                    "produccion": 0,
+                    "meta": 1800,
+                    "metaEfectiva": 0,
+                    "perdidaJustificada": 0,
+                    "perdidaNoJustificada": 0,
+                    "eficiencia": 0
+                }
+            }
+        }
+    },
+    {
         "LineId": "cdu",
         "Nombre": "CDU",
         "totalDia": {

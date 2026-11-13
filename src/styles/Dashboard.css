@@ -158,6 +158,54 @@ body {
   text-transform: uppercase;
 }
 
+.date-picker-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 6px;
+  margin-top: 3px;
+}
+
+.header-date-input {
+  background: #f8fafc;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  padding: 3px 8px;
+  font-size: 0.76rem;
+  font-weight: 700;
+  color: #1e293b;
+  cursor: pointer;
+  outline: none;
+  font-family: inherit;
+  transition: all 0.2s ease;
+}
+
+.header-date-input:hover,
+.header-date-input:focus {
+  border-color: #008040;
+  background: #ffffff;
+  box-shadow: 0 0 0 2px rgba(0, 128, 64, 0.15);
+}
+
+.btn-today-reset {
+  background: #008040;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 3px 9px;
+  font-size: 0.70rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.btn-today-reset:hover {
+  background: #006633;
+  transform: translateY(-1px);
+}
+
 /* ================= LAYOUT PRINCIPAL ================= */
 .main-layout {
   display: grid;
@@ -473,6 +521,16 @@ body {
   margin-top: 6px;
 }
 
+.chart-data-point {
+  transition: r 0.2s ease, fill 0.2s ease, stroke-width 0.2s ease;
+}
+
+.chart-data-point:hover {
+  r: 4.5px;
+  fill: #004d26;
+  stroke-width: 1.5px;
+}
+
 .featured-delta-val {
   font-size: 3.3rem;
   font-weight: 900;
@@ -593,6 +651,12 @@ body {
   font-size: 0.62rem;
   font-weight: 800;
   margin-top: 2px;
+}
+
+.downtime-badge.badge-success {
+  background-color: #e6f4ed;
+  color: #008040;
+  border-color: #b3e0c8;
 }
 
 /* 2. PRODUCCIÓN POR TURNO OPTIMIZADO */

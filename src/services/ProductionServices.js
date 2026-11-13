@@ -20,6 +20,12 @@ const productionService = {
         return response.data;
     },
 
+    getDashboardHourlyChart: async (lineId, date) => {
+        const params = { fecha: date, lineId: lineId };
+        const response = await api.get(`api/dashboard/hourly-production`, { params });
+        return response.data;
+    },
+
     //PERDIDAS
     syncParentLoss: async (linea, fecha, hora, minutosCalculados, idSup, idLider) => {
         //console.log("debug: ",linea," | ", fecha," | ", hora," | ", minutosCalculados," | ", idSup," | ", idLider);
