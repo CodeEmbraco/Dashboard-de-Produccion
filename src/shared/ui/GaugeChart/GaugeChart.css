@@ -1,0 +1,38 @@
+.ui-gauge-card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 230px;
+  position: relative;
+}
+
+.ui-gauge-label {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #1e293b;
+  margin-bottom: 2px;
+  letter-spacing: 0.5px;
+}
+
+.ui-gauge-svg-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.ui-gauge-svg {
+  width: 210px;
+  height: 115px;
+  overflow: visible;
+}
+
+.ui-gauge-value {
+  font-size: 1.95rem;
+  font-weight: 800;
+  margin-top: -6px;
+  color: #1e293b;
+}

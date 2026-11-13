@@ -1,0 +1,42 @@
+.line-control-panel {
+  display: flex;
+  justify-content: flex-start;
+  border: 2px solid #008040;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 6px 10px;
+}
+
+.line-control-panel table {
+  border-collapse: separate;
+  border-spacing: 6px 10px;
+}
+
+.line-control-panel td {
+  padding: 2px 5px;
+  font-weight: 700;
+  font-size: 0.92rem;
+  color: #1e293b;
+  text-align: right;
+}
+
+.line-control-panel input,
+.line-control-panel select {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1.5px solid #006633;
+  width: 200px;
+  background-color: #008040;
+  color: #ffffff;
+  font-size: 0.92rem;
+  font-weight: 700;
+  outline: none;
+  cursor: pointer;
+}
+
+.line-control-panel option {
+  font-weight: 700;
+  background-color: #ffffff;
+  color: #1e293b;
+}

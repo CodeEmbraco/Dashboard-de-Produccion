@@ -1,0 +1,110 @@
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  position: relative;
+  width: 100%;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 2;
+}
+
+.header-logo {
+  height: 42px;
+  object-fit: contain;
+}
+
+.banner-green {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #008040;
+  color: white;
+  padding: 7px 38px;
+  clip-path: polygon(5% 0%, 95% 0%, 100% 100%, 0% 100%);
+  font-weight: 800;
+  font-size: 1.15rem;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+.header-right-group {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  z-index: 10;
+}
+
+.header-time {
+  text-align: right;
+  font-weight: 700;
+  color: #334155;
+}
+
+.time-clock {
+  font-size: 1.15rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  justify-content: flex-end;
+}
+
+.time-date {
+  font-size: 0.72rem;
+  color: #64748b;
+  text-transform: uppercase;
+}
+
+.date-picker-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 6px;
+  margin-top: 3px;
+}
+
+.header-date-input {
+  background: #f8fafc;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  padding: 3px 8px;
+  font-size: 0.76rem;
+  font-weight: 700;
+  color: #1e293b;
+  cursor: pointer;
+  outline: none;
+  font-family: inherit;
+  transition: all 0.2s ease;
+}
+
+.header-date-input:hover,
+.header-date-input:focus {
+  border-color: #008040;
+  background: #ffffff;
+  box-shadow: 0 0 0 2px rgba(0, 128, 64, 0.15);
+}
+
+.btn-today-reset {
+  background: #008040;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 3px 9px;
+  font-size: 0.70rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.btn-today-reset:hover {
+  background: #006633;
+  transform: translateY(-1px);
+}

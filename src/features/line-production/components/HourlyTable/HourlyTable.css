@@ -1,0 +1,107 @@
+.contenedor-tabla-horaria {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.tabla-produccion-horaria {
+  margin: 0 auto 28px auto;
+  border-collapse: collapse;
+  width: 94%;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.tabla-produccion-horaria caption {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #008040;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  caption-side: top;
+  text-align: center;
+}
+
+.tabla-produccion-horaria th {
+  background-color: #008040;
+  color: #ffffff;
+  padding: 12px 10px;
+  font-weight: 700;
+  border: 1px solid #006633;
+  font-size: 0.92rem;
+}
+
+.tabla-produccion-horaria td {
+  border: 1px solid #e2e8f0;
+  padding: 8px 10px;
+  text-align: center;
+  font-size: 0.92rem;
+  color: #1e293b;
+}
+
+.tabla-produccion-horaria tr:nth-child(even) {
+  background-color: #f8fafc;
+}
+
+.tabla-produccion-horaria tr:hover {
+  background-color: #eaf6f0;
+  transition: background-color 0.2s ease;
+}
+
+.row-hour-cell {
+  cursor: pointer;
+}
+
+.row-hour-content {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+  font-weight: 700;
+  color: #334155;
+}
+
+.meal-badge {
+  border: 2px solid #22c55e;
+  border-radius: 5px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px 5px;
+}
+
+.obs-list-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.obs-detail-item {
+  font-size: 0.75rem;
+  padding: 4px 8px;
+  background-color: #f1f5f9;
+  border-left: 3px solid #ef5350;
+  border-radius: 4px;
+  text-align: left;
+}
+
+.btn-row-action {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: transform 0.2s ease;
+}
+
+.btn-row-action:hover {
+  transform: scale(1.2);
+}
+
+.empty-table-msg {
+  padding: 24px !important;
+  color: #64748b !important;
+  font-weight: 600;
+}

@@ -4,13 +4,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* La clave: Aplicamos la fuente a todos los elementos */
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 html, body, #root {
   width: 100%;
   height: 100%;
-  background-color: #f3f4f6; /* Fondo gris muy suave */
+  background-color: #eef2f5;
+  color: #1e293b;
   -webkit-font-smoothing: antialiased;
 }

@@ -1,0 +1,215 @@
+.loss-summary-banner {
+  display: flex;
+  justify-content: space-around;
+  background-color: #f8fafc;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #e2e8f0;
+}
+
+.loss-summary-item {
+  text-align: center;
+}
+
+.loss-summary-label {
+  font-size: 0.78rem;
+  color: #64748b;
+  font-weight: 800;
+}
+
+.loss-summary-val {
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.loss-list-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 8px;
+}
+
+.loss-list-table th {
+  background-color: #f1f5f9;
+  padding: 8px;
+  text-align: left;
+  font-size: 0.85rem;
+  color: #334155;
+}
+
+.loss-list-table td {
+  border-bottom: 1px solid #f1f5f9;
+  padding: 8px;
+  font-size: 0.88rem;
+  text-align: left;
+}
+
+.btn-delete-loss {
+  background-color: transparent;
+  color: #dc2626;
+  border: 1px solid #dc2626;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 2px 8px;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.btn-delete-loss:hover {
+  background-color: #fee2e2;
+}
+
+.add-loss-form {
+  display: flex;
+  gap: 10px;
+  padding: 15px;
+  background-color: #f8fafc;
+  border-radius: 8px;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  text-align: left;
+}
+
+.form-group label {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #475569;
+}
+
+.form-group input,
+.form-group select {
+  padding: 8px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 0.88rem;
+}
+
+.btn-add-loss {
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  height: 36px;
+  font-weight: 700;
+}
+
+.btn-add-loss:hover {
+  background-color: #1565c0;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: space-around;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.btn-modal-cancel {
+  background-color: #ef5350;
+  color: white;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.btn-modal-confirm {
+  background-color: #008040;
+  color: white;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.goals-warning-box {
+  margin-top: 12px;
+  padding: 12px;
+  background-color: #fffbeb;
+  border-radius: 8px;
+  border: 1px solid #fde68a;
+  color: #92400e;
+  font-size: 0.84rem;
+}
+
+/* Manual de Uso */
+.manual-step-badge {
+  background: #f1f5f9;
+  color: #475569;
+  padding: 4px 14px;
+  border-radius: 20px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  display: inline-block;
+  margin-bottom: 14px;
+}
+
+.manual-carousel-grid {
+  display: grid;
+  grid-template-columns: 50px 1fr 50px;
+  align-items: center;
+  gap: 16px;
+  margin: 14px 0;
+}
+
+.manual-step-card {
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 24px;
+  text-align: left;
+  min-height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  font-size: 0.98rem;
+  color: #334155;
+  line-height: 1.5;
+}
+
+.manual-nav-arrow {
+  background: none;
+  border: none;
+  color: #008040;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.manual-nav-arrow:disabled {
+  color: #cbd5e1;
+  cursor: not-allowed;
+}
+
+.manual-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.manual-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: #cbd5e1;
+  transition: all 0.2s ease;
+}
+
+.manual-dot.active {
+  background-color: #008040;
+  width: 22px;
+  border-radius: 5px;
+}

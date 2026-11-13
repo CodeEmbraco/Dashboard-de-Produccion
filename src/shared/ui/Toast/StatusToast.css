@@ -1,0 +1,59 @@
+.discreet-notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  animation: toastFadeIn 0.3s ease;
+}
+
+.loading-toast {
+  background-color: #e3f2fd;
+  color: #0d47a1;
+  border-left: 4px solid #1976d2;
+}
+
+.saving-toast {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  border-left: 4px solid #008040;
+}
+
+.error-toast {
+  background-color: #ffebee;
+  color: #c62828;
+  border-left: 4px solid #d32f2f;
+}
+
+.warning-toast {
+  background-color: #fff3e0;
+  color: #e65100;
+  border-left: 4px solid #ea5a00;
+}
+
+.spinner-mini {
+  width: 16px;
+  height: 16px;
+  border: 2px solid currentColor;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  animation: toastRotation 1s linear infinite;
+}
+
+@keyframes toastRotation {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes toastFadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

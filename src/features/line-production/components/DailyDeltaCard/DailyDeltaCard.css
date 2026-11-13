@@ -1,0 +1,92 @@
+.daily-delta-card {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 375px;
+  position: relative;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 8px 10px 10px 10px;
+}
+
+.daily-delta-title {
+  margin-block: 4px;
+  color: #475569;
+  text-align: left;
+  font-size: 1.15rem;
+  font-weight: 800;
+  padding-left: 6px;
+  width: 100%;
+}
+
+.daily-delta-body {
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 10px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+.daily-delta-main-val {
+  font-size: 2.2rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.daily-delta-goal-span {
+  font-size: 1rem;
+  color: #94a3b8;
+  font-weight: 600;
+}
+
+.daily-delta-pill {
+  font-size: 1.15rem;
+  font-weight: 800;
+  margin-top: 8px;
+  padding: 3px 12px;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+.daily-delta-divider {
+  width: 2px;
+  height: 75px;
+  background-color: #e2e8f0;
+}
+
+.daily-delta-shifts {
+  background-color: #f1f5f9;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 110px;
+  border-radius: 10px;
+  padding: 8px 10px;
+}
+
+.daily-delta-shift-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.95rem;
+}
+
+.daily-delta-progress-track {
+  width: 100%;
+  background-color: #e2e8f0;
+  border-radius: 10px;
+  height: 10px;
+  overflow: hidden;
+  margin-top: 4px;
+}
+
+.daily-delta-progress-fill {
+  height: 100%;
+  border-radius: 10px;
+  transition: width 0.5s ease-in-out, background-color 0.5s ease;
+}

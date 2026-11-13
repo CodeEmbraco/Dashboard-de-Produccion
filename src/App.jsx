@@ -1,26 +1,19 @@
-//react
-import React from "react";
-import { Routes, Route, Navigate } from "react-router-dom";
-
-//Production Context
-import { ProductionProvider } from '@context/ProductionContext'
-
-//Componente Padre
-import Dashboard from './components/Dashboard';
-import './styles/Dashboard.css';
+import React from 'react';
+import { Routes, Route, Navigate } from 'react-router-dom';
+import { ProductionProvider } from '@shared/components/ProductionProvider/ProductionContext';
+import { DashboardView } from '@features/production-dashboard';
+import { LineProductionView } from '@features/line-production';
 
 function App() {
   return (
-    <>
-      <ProductionProvider>
-        <Routes>
-          <Route path="/Dashboard" element={<Dashboard/>} />
-          <Route path="*" element={<Navigate to="/Dashboard" replace/>} />
-          {/*//TODO: Cuando tengamos el componente de tabla descomentamos lo de abajo*/}
-          {/* <Route path="/Produccion/:lineid" element={<Tabla/>} />  */}
-        </Routes>
-      </ProductionProvider>
-    </>
+    <ProductionProvider>
+      <Routes>
+        <Route path="/Dashboard" element={<DashboardView />} />
+        <Route path="/Produccion/:lineId" element={<LineProductionView />} />
+        <Route path="/tabla/:lineId" element={<LineProductionView />} />
+        <Route path="*" element={<Navigate to="/Dashboard" replace />} />
+      </Routes>
+    </ProductionProvider>
   );
 }
 

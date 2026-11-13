@@ -1,0 +1,32 @@
+.ticker-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding: 20px 0;
+  background: transparent;
+}
+
+.ticker-wrapper:hover .ticker-track {
+  animation-play-state: paused;
+}
+
+.ticker-track {
+  display: flex;
+  gap: 24px;
+  width: max-content;
+  animation: scrollLeft 40s linear infinite;
+}
+
+.ticker-card-item {
+  width: 440px;
+  flex-shrink: 0;
+}
+
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

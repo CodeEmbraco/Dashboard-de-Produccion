@@ -1,0 +1,21 @@
+.shift-gauges-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+
+.shift-mascot-wrapper {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.shift-mascot-img {
+  height: 210px;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.15));
+  transition: transform 0.3s ease;
+}

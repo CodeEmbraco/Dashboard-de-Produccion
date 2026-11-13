@@ -6,6 +6,9 @@ import path from 'path'
 export default defineConfig({
   resolve:{
     alias:{
+      '@shared': path.resolve(import.meta.dirname, './src/shared'),
+      '@layouts': path.resolve(import.meta.dirname, './src/layouts'),
+      '@features': path.resolve(import.meta.dirname, './src/features'),
       '@assets': path.resolve(import.meta.dirname, './src/assets'),
       '@components': path.resolve(import.meta.dirname, './src/components'),
       '@pages': path.resolve(import.meta.dirname, './src/pages'),
